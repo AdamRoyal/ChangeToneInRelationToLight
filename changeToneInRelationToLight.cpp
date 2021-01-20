@@ -12,7 +12,7 @@ Serial.begin(9600);
 
 void loop() {
 lightVal = analogRead(lightPin);
-// buzz point slope
+// Point Slope
 dt = (9./550.)*lightVal-(9.*200/550)+1;
 digitalWrite(buzzPin, HIGH);
 delay(dt);
